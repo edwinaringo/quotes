@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteMetadataComponent } from './quote-metadata/quote-metadata.component';
+import { PostDurationPipe } from './post-duration.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteMetadataComponent
+    QuoteMetadataComponent,
+    PostDurationPipe
   ],
   imports: [
     BrowserModule,
