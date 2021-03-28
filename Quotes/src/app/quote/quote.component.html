@@ -2,9 +2,11 @@
 <hr>
 
 <div *ngFor = 'let quote of userQuotes'>
+  <div *ngFor = 'let quote of userQuotes, let i = index'>
   <h2>"{{quote.message}}"</h2>
 
   <span><h4>{{quote.author}}</h4></span>
+  <button (click)='toggleDetails(i)'>Details</button>
   
-  <app-quote-metadata [quote]='quote'></app-quote-metadata>
+  <app-quote-metadata *ngIF = "quote.showMeta"[quote]='quote'></app-quote-metadata>
 </div>

@@ -15,6 +15,11 @@ export class QuoteComponent implements OnInit {
     new Quote(4, 'Race cars become beautiful when they win','-Enzo Ferrari',0,0, new Date(2021,3,23)),
   ]
 
+  toggleDetails(index: number){
+    this.userQuotes[index].showMeta = !this.userQuotes[index].showMeta;
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {
