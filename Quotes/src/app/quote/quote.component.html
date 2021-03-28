@@ -8,5 +8,5 @@
   <span><h4>{{quote.author}}</h4></span>
   <button (click)='toggleDetails(i)'>Details</button>
   
-  <app-quote-metadata *ngIF = "quote.showMeta"[quote]='quote'></app-quote-metadata>
+  <app-quote-metadata *ngIF = "quote.showMeta"[quote]='quote' (isDeleted)= 'quoteDelete($event,i)'></app-quote-metadata>
 </div>
