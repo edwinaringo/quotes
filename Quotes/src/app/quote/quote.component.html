@@ -5,9 +5,6 @@
   <h2>"{{quote.message}}"</h2>
 
   <span><h4>{{quote.author}}</h4></span>
-  <span>{{quote.upVote}}<button>Like</button></span> <span>{{quote.downVote}} <button>Dislike</button></span>
-
-  <br>
-  <div>{{quote.dateAdded}}</div>
-
+  
+  <app-quote-metadata [quote]='quote'></app-quote-metadata>
 </div>

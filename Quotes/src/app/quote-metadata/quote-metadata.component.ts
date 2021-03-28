@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Quote } from '../quote'
 
 @Component({
   selector: 'app-quote-metadata',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote-metadata.component.css']
 })
 export class QuoteMetadataComponent implements OnInit {
+
+  @Input() quote:Quote | undefined;
 
   constructor() { }
 
