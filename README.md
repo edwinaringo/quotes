@@ -16,6 +16,7 @@ tedaringo628@gmail.com
 * Bootstrap
 
 ## Link do Deployed Site
+https://vigorous-kalam-fc29e2.netlify.app
 
 ## Project Setup Instructions
 
