@@ -4,3 +4,8 @@ body{
   background-attachment: fixed;
 }
 
+.jumbotron{
+  background-color: blueviolet;
+  opacity: 0.9;
+  color: aliceblue;
+}
