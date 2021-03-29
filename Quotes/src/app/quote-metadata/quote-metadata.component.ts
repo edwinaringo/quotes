@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 
 import { Quote } from '../quote'
-
 @Component({
   selector: 'app-quote-metadata',
   templateUrl: './quote-metadata.component.html',
@@ -12,9 +11,11 @@ export class QuoteMetadataComponent implements OnInit {
   @Input() quote:Quote | undefined;
   @Output() isDeleted = new EventEmitter <boolean> ();
 
-  quotedelete(deleted:boolean){
+  quoteDelete(deleted:boolean){
     this.isDeleted.emit(deleted);
   }
+
+ 
 
   constructor() { }
 

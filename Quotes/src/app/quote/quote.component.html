@@ -1,12 +1,13 @@
 <h1>Quotes</h1>
 <hr>
-<app-quote-form></app-quote-form>
+
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 <div *ngFor = 'let quote of userQuotes'>
   <div *ngFor = 'let quote of userQuotes, let i = index'>
   <h2>"{{quote.message}}"</h2>
 
   <span><h4>{{quote.author}}</h4></span>
-  <button (click)='toggleDetails(i)'>Details</button>
+  <button class ="btn btn-primary" (click)='toggleDetails(i)'>Details</button>
   
-  <app-quote-metadata *ngIF = "quote.showMeta"[quote]='quote' (isDeleted)= 'quoteDelete($event,i)'></app-quote-metadata>
+  <app-quote-metadata *ngIf = "quote.showMeta"[quote]='quote' (isDeleted)= 'quoteDelete($event,i)'></app-quote-metadata>
 </div>

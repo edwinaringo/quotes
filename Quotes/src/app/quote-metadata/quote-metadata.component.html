@@ -1,4 +1,7 @@
-<span>{{quote.upVote}}<button>like</button> </span><span>{{quote.downVote}}<button>Downvote</button></span>
+<button class="btn btn-default" (click) = 'upVoteQuote()'>Upvote:{{quote.upVote}}</button>
+
+<button class="btn btn-dark" (click) = 'downVoteQuote()'>Downvote:{{quote.downVote}}</button>
+
 <br>
 <div>posted {{quote.dateAdded|postDuration}} days ago</div>
 
@@ -6,3 +9,4 @@
 
 <button (click) = 'quoteDelete(true)'>Remove</button>
 <hr>
+
