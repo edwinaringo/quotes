@@ -2,7 +2,8 @@
 <hr>
 
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-<div *ngFor = 'let quote of userQuotes'>
+
+<hr><hr>
   <div *ngFor = 'let quote of userQuotes, let i = index'>
   <h2>"{{quote.message}}"</h2>
 

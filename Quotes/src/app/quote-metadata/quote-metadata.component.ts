@@ -15,7 +15,6 @@ export class QuoteMetadataComponent implements OnInit {
     this.isDeleted.emit(deleted);
   }
 
- 
 
   constructor() { }
 
