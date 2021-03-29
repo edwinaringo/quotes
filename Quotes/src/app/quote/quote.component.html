@@ -10,11 +10,12 @@
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
 <hr><hr>
-  <div *ngFor = 'let quote of userQuotes, let i = index'>
+  <div class="jumbotron" *ngFor = 'let quote of userQuotes, let i = index'>
   <h2>"{{quote.message}}"</h2>
 
   <span><h4>{{quote.author}}</h4></span>
   <button class ="btn btn-primary" (click)='toggleDetails(i)'>Details</button>
+  <br>
   
   <app-quote-metadata *ngIf = "quote.showMeta"[quote]='quote' (isDeleted)= 'quoteDelete($event,i)'></app-quote-metadata>
 </div>

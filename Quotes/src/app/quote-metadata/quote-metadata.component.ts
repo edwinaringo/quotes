@@ -8,12 +8,22 @@ import { Quote } from '../quote'
 })
 export class QuoteMetadataComponent implements OnInit {
 
-  @Input() quote:Quote | undefined;
+  @Input()
+  quote!: Quote;
   @Output() isDeleted = new EventEmitter <boolean> ();
 
   quoteDelete(deleted:boolean){
     this.isDeleted.emit(deleted);
   }
+
+  upVoteQuote(){
+        this.quote.upVote++;
+    }
+
+    downVoteQuote(){
+        this.quote.downVote++;
+    }
+
 
 
   constructor() { }
