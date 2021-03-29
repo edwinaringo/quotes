@@ -26,6 +26,16 @@
               </div>
 
           </div>
+          <div class="form-group">
+
+            <label for="postedBy">Posted By</label>
+            <input type="text" required class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy="ngModel">
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+              <p> Poster is Required</p>
+              
+          </div>
+            
+        </div>
           <button type="submit reset" class="btn btn-success btn-lg">Add Quote</button>
       </form>
  
