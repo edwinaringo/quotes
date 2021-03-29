@@ -9,10 +9,10 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   userQuotes = [
-    new Quote(1, 'Love for all, hatred for none','-Margot Wale',0,0, new Date(2021,3,23)),
-    new Quote(2, 'For all the kids that dream the impossible','-Lewis Hamilton',0,0, new Date(2021,3,23)),
-    new Quote(3, 'First you have to finish','-Michael Schumacher',0,0, new Date(2021,3,23)),
-    new Quote(4, 'Race cars become beautiful when they win','-Enzo Ferrari',0,0, new Date(2021,3,23)),
+    new Quote(1, 'Love for all, hatred for none','-Margot Wale',0,0, new Date(2021,3,23),'Edwin'),
+    new Quote(2, 'For all the kids that dream the impossible','-Lewis Hamilton',0,0, new Date(2021,3,23), 'Joy'),
+    new Quote(3, 'First you have to finish','-Michael Schumacher',0,0, new Date(2021,3,23), 'Phil'),
+    new Quote(4, 'Race cars become beautiful when they win','-Enzo Ferrari',0,0, new Date(2021,3,23), 'Sky'),
   ]
 
   toggleDetails(index: number){
