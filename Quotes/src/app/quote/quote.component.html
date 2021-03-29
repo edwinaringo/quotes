@@ -1,6 +1,12 @@
-<h1>Quotes</h1>
-<hr>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class ="navbar-brand">Quote App</a>
+    </div>
+  </div>
 
+</nav>
+<div class="container">
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
 <hr><hr>
@@ -11,4 +17,5 @@
   <button class ="btn btn-primary" (click)='toggleDetails(i)'>Details</button>
   
   <app-quote-metadata *ngIf = "quote.showMeta"[quote]='quote' (isDeleted)= 'quoteDelete($event,i)'></app-quote-metadata>
+</div>
 </div>
