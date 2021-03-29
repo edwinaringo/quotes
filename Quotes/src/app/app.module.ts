@@ -8,6 +8,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteMetadataComponent } from './quote-metadata/quote-metadata.component';
 import { PostDurationPipe } from './post-duration.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { HighestDirective } from './highest.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     QuoteComponent,
     QuoteMetadataComponent,
     PostDurationPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    HighestDirective
   ],
   imports: [
     BrowserModule,

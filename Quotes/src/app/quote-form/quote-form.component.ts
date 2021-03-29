@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 })
 export class QuoteFormComponent implements OnInit {
   
-  newQuote = new Quote (0,"","",0,0,new Date(),"");
+  newQuote = new Quote (0,"","",0,0,new Date(),"",false);
   @Output() addQuote = new EventEmitter<Quote>();
 
   submitQuote(){
     this.addQuote.emit(this.newQuote);
-    this.newQuote = new Quote(0,"","",0,0,new Date(),"");
+    this.newQuote = new Quote(0,"","",0,0,new Date(),"",false);
   }
   constructor() { }
 
